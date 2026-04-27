@@ -7,14 +7,13 @@ export default function TarifPage() {
     { name: "Baby Relaxation", price: "Rp110.000" },
     { name: "Baby Therapy Massage", price: "Rp130.000" },
     { name: "Baby Spa", price: "Rp150.000" },
-    { name: "Baby Physiotherapy", price: "Rp170.000" },
   ];
 
   const kidsServices = [
     { name: "Kids Relaxation", price: "Rp130.000" },
     { name: "Kids Therapy Massage", price: "Rp150.000" },
     { name: "Kids Spa", price: "Rp170.000" },
-    { name: "Kids Physiotherapy", price: "Rp200.000" },
+  
   ];
 
   const momServices = [
@@ -25,11 +24,6 @@ export default function TarifPage() {
     { name: "Reguler Mom Massage", price: "Rp180.000" },
   ];
 
-  const physioServices = [
-    { name: "Prenatal Physiotherapy", price: "Rp230.000" },
-    { name: "Postpartum Physiotherapy", price: "Rp230.000" },
-    { name: "Physiotherapy General", price: "Rp220.000" },
-  ];
 
   const packages = [
     { name: "Recovery Care Program (4x sesi)", price: "Rp820.000" },
@@ -109,7 +103,6 @@ export default function TarifPage() {
         <Section title="👶 Layanan Bayi" data={babyServices} />
         <Section title="🧒 Layanan Anak" data={kidsServices} />
         <Section title="👩 Layanan Ibu" data={momServices} />
-        <Section title="🏥 Fisioterapi" data={physioServices} />
         <Section title="🎁 Paket Hemat" data={packages} />
         <Section title="✨ Add On" data={addons} />
 

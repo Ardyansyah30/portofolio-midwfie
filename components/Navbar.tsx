@@ -24,6 +24,9 @@ export default function Navbar() {
           <Link href="/tarif" className="hover:text-pink-500 transition-colors">
             Tarif
           </Link>
+          <Link href="/sertifikat" className="hover:text-pink-500 transition-colors">
+            Sertifikat
+          </Link>
           <Link href="/#contact" className="hover:text-pink-500 transition-colors">
             Kontak
           </Link>
@@ -42,12 +45,15 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu (simple) */}
-        <div className="md:hidden">
+        <div className="md:hidden flex space-x-4">
           <Link
             href="/tarif"
             className="text-pink-500 font-semibold"
           >
             Tarif
+          </Link>
+          <Link href="/sertifikat" className="text-pink-500 font-semibold">
+            Sertifikat
           </Link>
         </div>
 
