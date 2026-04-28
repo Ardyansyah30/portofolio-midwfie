@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "BabyCare - Layanan Home Care Bayi Profesional",
   description: "Memberikan perawatan terbaik untuk buah hati Anda dengan penuh kasih sayang dan dukungan profesional untuk Ibu di rumah.",
+   verification: {
+    google: "google-site-verification: google585f9a89951cdb75.html", // isi dari Google
+  },
 };
 
 export default function RootLayout({
