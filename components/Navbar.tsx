@@ -46,6 +46,9 @@ export default function Navbar() {
 
         {/* Mobile Menu (simple) */}
         <div className="md:hidden flex space-x-4">
+          <Link href="/#services" className="text-pink-500 font-semibold">
+            Layanan
+          </Link>
           <Link
             href="/tarif"
             className="text-pink-500 font-semibold"

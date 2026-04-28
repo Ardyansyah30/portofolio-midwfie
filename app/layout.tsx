@@ -29,17 +29,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
       suppressHydrationWarning
     >
-      <head>
-        {/* 🔥 META MANUAL (PASTI TERBACA GOOGLE) */}
-        <meta
-          name="google-site-verification"
-          content="9MCAiK5V6L5y6fyEQ--ASYgX7kjjHTmUjLxdAS8pr2A"
-        />
-      </head>
-
       <body className={`${geistSans.className} min-h-full flex flex-col`}>
         {children}
       </body>

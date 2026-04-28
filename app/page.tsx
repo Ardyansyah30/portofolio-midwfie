@@ -6,18 +6,47 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-[#fffafa]">
-      {/* Baby-themed Background Pattern (Stars and Dots) */}
-      <div className="fixed inset-0 z-[-1] opacity-[0.05] pointer-events-none" 
-           style={{ 
-             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5l1 2h2l-2 1.5 1 2.5-2-1.5-2 1.5 1-2.5-2-1.5h2zM5 30l1 2h2l-2 1.5 1 2.5-2-1.5-2 1.5 1-2.5-2-1.5h2zM55 30l1 2h2l-2 1.5 1 2.5-2-1.5-2 1.5 1-2.5-2-1.5h2zM30 55l1 2h2l-2 1.5 1 2.5-2-1.5-2 1.5 1-2.5-2-1.5h2z' fill='%23ec4899'/%3E%3Ccircle cx='15' cy='15' r='1' fill='%236366f1'/%3E%3Ccircle cx='45' cy='45' r='1' fill='%236366f1'/%3E%3C/svg%3E")` 
-           }} 
+    <main className="relative min-h-screen bg-white text-gray-900 overflow-hidden scroll-smooth">
+
+      {/* Premium Background Glow */}
+      <div className="fixed inset-0 -z-10 pointer-events-none overflow-hidden">
+        {/* Top Gradient */}
+        <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[900px] h-[900px] bg-pink-200/30 blur-[140px] rounded-full" />
+
+        {/* Bottom Gradient */}
+        <div className="absolute bottom-[-25%] right-[-10%] w-[700px] h-[700px] bg-blue-200/30 blur-[140px] rounded-full" />
+
+        {/* Center Glow */}
+        <div className="absolute top-[40%] left-[-10%] w-[500px] h-[500px] bg-purple-200/20 blur-[120px] rounded-full" />
+      </div>
+
+      {/* Noise Texture */}
+      <div
+        className="fixed inset-0 -z-10 opacity-[0.03] pointer-events-none"
+        style={{
+          backgroundImage:
+            "url('data:image/svg+xml,%3Csvg xmlns=\"http://www.w3.org/2000/svg\" width=\"160\" height=\"160\" viewBox=\"0 0 160 160\"%3E%3Cg fill=\"%23000000\" fill-opacity=\"1\"%3E%3Ccircle cx=\"10\" cy=\"10\" r=\"1\"/%3E%3Ccircle cx=\"80\" cy=\"50\" r=\"1\"/%3E%3Ccircle cx=\"120\" cy=\"120\" r=\"1\"/%3E%3Ccircle cx=\"40\" cy=\"100\" r=\"1\"/%3E%3C/g%3E%3C/svg%3E')",
+        }}
       />
+
+      {/* Page Layout */}
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Contact />
+
+      <section className="relative">
+        <Hero />
+      </section>
+
+      <section className="relative py-10">
+        <About />
+      </section>
+
+      <section className="relative py-10">
+        <Services />
+      </section>
+
+      <section className="relative pt-10 pb-24">
+        <Contact />
+      </section>
     </main>
   );
 }
