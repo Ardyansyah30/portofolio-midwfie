@@ -1,16 +1,18 @@
-export default function sitemap() {
-  return [
-    {
-      url: "https://portofolio-midwfie.vercel.app",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://portofolio-midwfie.vercel.app/tarif",
-      lastModified: new Date(),
-    },
-    {
-      url: "https://portofolio-midwfie.vercel.app/sertifikat",
-      lastModified: new Date(),
-    },
+import { MetadataRoute } from "next";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = "https://portofolio-midwfie.vercel.app";
+
+  const routes = [
+    "",
+    "/tarif",
+    "/sertifikat",
+    "/#services",
+    "/#contact",
   ];
+
+  return routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+  }));
 }
