@@ -55,7 +55,12 @@ export default function TarifPage() {
     { title: "Add On", data: addons },
   ];
 
-  const Card = ({ item }: any) => (
+  interface ServiceItem {
+    name: string;
+    price: string;
+  }
+
+  const Card = ({ item }: { item: ServiceItem }) => (
     <motion.div
       whileHover={{ y: -8, scale: 1.02 }}
       transition={{ duration: 0.35 }}

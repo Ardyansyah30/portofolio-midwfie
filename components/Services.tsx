@@ -183,6 +183,7 @@ export default function Services() {
               {/* Close */}
               <button
                 onClick={closeModal}
+                aria-label="Tutup detail layanan"
                 className="absolute top-5 right-5 z-50 bg-white rounded-full p-3 shadow-lg"
               >
                 <X size={22} />
@@ -222,6 +223,7 @@ export default function Services() {
                   {/* Prev */}
                   <button
                     onClick={prevSlide}
+                    aria-label="Foto sebelumnya"
                     className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/85 rounded-full p-3 shadow-xl"
                   >
                     <ChevronLeft size={22} />
@@ -230,6 +232,7 @@ export default function Services() {
                   {/* Next */}
                   <button
                     onClick={nextSlide}
+                    aria-label="Foto selanjutnya"
                     className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/85 rounded-full p-3 shadow-xl"
                   >
                     <ChevronRight size={22} />
