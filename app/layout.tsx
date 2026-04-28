@@ -14,24 +14,35 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "BabyCare - Layanan Home Care Bayi Profesional",
-  description: "Memberikan perawatan terbaik untuk buah hati Anda dengan penuh kasih sayang dan dukungan profesional untuk Ibu di rumah.",
-   verification: {
-    google: "585f9a89951cdb75", // isi dari Google
+  description:
+    "Memberikan perawatan terbaik untuk buah hati Anda dengan penuh kasih sayang dan dukungan profesional untuk Ibu di rumah.",
+  verification: {
+    google: "9MCAiK5V6L5y6fyEQ--ASYgX7kjjHTmUjLxdAS8pr2A",
   },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className={`${geistSans.className} min-h-full flex flex-col`}>{children}</body>
+      <head>
+        {/* 🔥 META MANUAL (PASTI TERBACA GOOGLE) */}
+        <meta
+          name="google-site-verification"
+          content="9MCAiK5V6L5y6fyEQ--ASYgX7kjjHTmUjLxdAS8pr2A"
+        />
+      </head>
+
+      <body className={`${geistSans.className} min-h-full flex flex-col`}>
+        {children}
+      </body>
     </html>
   );
 }
